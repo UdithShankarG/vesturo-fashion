@@ -7,8 +7,10 @@ import useAuthStore from "./store/authStore";
 
 // Lazy load components for better performance
 const HomePage = lazy(() => import("./components/home/HomePage"));
-const ViewMorePage = lazy(() => import("./pages/public/ViewMorePage"));
-const PostDetailsPage = lazy(() => import("./pages/public/PostDetailsPage"));
+const ViewMorePage = lazy(() => import("./pages/public/ViewMorePage.jsx"));
+const PostDetailsPage = lazy(() =>
+  import("./pages/public/PostDetailsPage.jsx")
+);
 
 // Admin Pages - Lazy loaded
 const AdminLogin = lazy(() => import("./pages/admin/AdminLogin"));
