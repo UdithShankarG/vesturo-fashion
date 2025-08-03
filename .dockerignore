@@ -1,0 +1,32 @@
+# Dependencies
+node_modules
+*/node_modules
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+
+# Build outputs
+frontend/dist
+backend/dist
+
+# Logs
+logs
+*.log
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+docs/
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js

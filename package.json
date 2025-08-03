@@ -1,0 +1,54 @@
+{
+  "name": "vesturo-fashion-platform",
+  "version": "1.0.0",
+  "description": "Complete fashion affiliate marketing platform with Instagram integration - SEO optimized for Google #1 ranking",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "lint": "cd frontend && npm run lint",
+    "production:setup": "npm run install:all && npm run build",
+    "production:start": "cd backend && NODE_ENV=production npm start",
+    "deploy:vercel": "cd frontend && vercel --prod",
+    "deploy:render": "echo 'Backend will auto-deploy from GitHub'",
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "fashion",
+    "clothing",
+    "style",
+    "trends",
+    "affiliate",
+    "marketing",
+    "instagram",
+    "ecommerce",
+    "react",
+    "nodejs",
+    "mongodb",
+    "seo",
+    "fashion-blog",
+    "designer-clothing",
+    "fashion-trends"
+  ],
+  "author": "Udith Shankar - Vesturo Fashion",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UdithShankarG/vesturo-fashion.git"
+  },
+  "homepage": "https://vesturo-fashion.vercel.app",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
