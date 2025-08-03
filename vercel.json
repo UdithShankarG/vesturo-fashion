@@ -1,34 +1,20 @@
 {
   "version": 2,
   "name": "vesturo-fashion",
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "https://vesturo-backend.onrender.com/api/$1"
-    },
-    {
-      "src": "/sitemap.xml",
-      "dest": "/frontend/public/sitemap.xml"
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/frontend/public/robots.txt"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/dist/index.html"
-    }
-  ],
+  "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://vesturo-backend.onrender.com/api/$1"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "/udishrav/U-admin"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
