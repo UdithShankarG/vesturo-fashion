@@ -73,7 +73,8 @@ dist/
 
 # Gatsby files
 .cache/
-public/
+/public/
+frontend/public/dist/
 
 # Storybook build outputs
 .out/

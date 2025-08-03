@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow admin areas
+Disallow: /udishrav/
+Disallow: /admin/
+Disallow: /api/
+
+# Allow important fashion pages
+Allow: /category/
+Allow: /post/
+Allow: /trends/
+Allow: /style-guide/
+Allow: /designer-brands/
+
+# Sitemap location
+Sitemap: https://vesturo-fashion.vercel.app/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
